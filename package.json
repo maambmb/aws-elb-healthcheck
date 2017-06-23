@@ -1,5 +1,5 @@
 {
-  "name": "maambmb-alb-healthcheck",
+  "name": "aws-elb-healthcheck",
   "version": "1.0.0",
   "description": "",
   "main": "index.js"
