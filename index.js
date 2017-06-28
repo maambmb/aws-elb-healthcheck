@@ -1,6 +1,7 @@
 module.exports = function( req, res, next ) {
 
-    if( req.headers["user-agent"].toLowerCase().startsWith( "elb-healthchecker" ) ) {
+    var ua = req.headers["user-agent"];
+    if( ua && ua.toLowerCase().startsWith( "elb-healthchecker" ) ) {
         res.send( "OK" );
         return;
     }
